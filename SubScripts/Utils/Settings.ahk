@@ -31,6 +31,10 @@ global wordsRandomizer = %wordsRandomizer_Setting%
 IniRead, phonetic_Setting, %A_ScriptDir%\settings.ini, SETTINGS, phonetic
 global phonetic = %phonetic_Setting%
 
+; Status codes: Replaces cum with cum
+IniRead, statusCodes_Setting, %A_ScriptDir%\settings.ini, SETTINGS, statusCodes
+global statusCodes = %statusCodes_Setting%
+
 ; Verbs synonyms: Replaces some specifics verbs with more fitting synonyms. ("Bambi laughs" => "Bambi giggles")
 IniRead, verbsSynonyms_Setting, %A_ScriptDir%\settings.ini, SETTINGS, verbsSynonyms
 global verbsSynonyms = %verbsSynonyms_Setting%
@@ -47,6 +51,10 @@ global hesitationMarks = %hesitationMarks_Setting%
 IniRead, hornyThoughts_Setting, %A_ScriptDir%\settings.ini, SETTINGS, hornyThoughts
 global hornyThoughts = %hornyThoughts_Setting%
 
+; Big Word Remover: Replaces big words with confused noises
+IniRead, bigWordLength_Setting, %A_ScriptDir%\settings.ini, SETTINGS, bigWordLength
+global bigWordLength = bigWordLength_Setting
+
 ;------------------------------------------------------------------------------
 ; DEBUG
 ;------------------------------------------------------------------------------
@@ -60,6 +68,12 @@ if (applicationHandled == "ERROR") {
 if (applicationHandled == "ALL") {
 	applicationHandled =
 }
+
+
+; Custom Bambi Pronouns: replaces Bambi with user input name etc
+IniRead, customPronoun_Setting, %A_ScriptDir%\settings.ini, SETTINGS, customPronoun
+global customPronoun = customPronoun_Setting
+
 
 ; Display settings summary at startup
 IniRead, settingSummary_Setting, %A_ScriptDir%\settings.ini, DEBUG, settingSummary
@@ -80,6 +94,10 @@ if (%settingSummary_Setting%) {
 		Punctuation = %punctuation_Setting%
 		Hesitation Marks = %hesitationMarks_Setting%
 		Horny Thoughts = %hornyThoughts_Setting%
+		Custom Pronoun = %customPronoun_Setting%
+		Phonetic Setting = %phonetic_Setting%
+		Status Codes = %statusCodes_Setting%
+		Big Word Remover = %bigWordLength_Setting%
 		
 		(You can prevent this window to show up by setting the key "settingSummary" to false in the "setting.ini" file)
 	)

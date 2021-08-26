@@ -13,8 +13,12 @@ loadWordReplacer(wordReplacer)
 load3rdPersonVerbs(bambiMode)
 loadWordsRandomizer(wordsRandomizer)
 loadPhonetic(phonetic)
+loadStatusCodes(statusCodes)
 loadVerbsSynonyms(verbsSynonyms)
 loadPunctuation(punctuation)
+if (bigWordLength > 0) {
+	loadBigWordRemover()
+}
 if (hesitationMarks or hornyThoughts) {
 	loadHesitationsAndHornyThoughts(true)
 }

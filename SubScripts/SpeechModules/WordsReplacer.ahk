@@ -31,7 +31,7 @@ loadWordReplacer(state) {
 		Hotstring("::though", "tho")
 		Hotstring("::through", "thru")
 		Hotstring("::thanks", "thankies")
-		hotstring("::whatever", "whatevz")
+		Hotstring("::whatever", "whatevz")
 		Hotstring("reset")
 	}
 }

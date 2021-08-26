@@ -67,8 +67,11 @@ SetWorkingDir %A_ScriptDir%
 #Include %A_ScriptDir%\SubScripts\SpeechModules\Bambifier\Bambi3rdPersonVerbs.ahk
 #Include %A_ScriptDir%\SubScripts\SpeechModules\WordsRandomizer.ahk
 #Include %A_ScriptDir%\SubScripts\SpeechModules\Phonetic.ahk
+#Include %A_ScriptDir%\SubScripts\SpeechModules\StatusCodes.ahk
 #Include %A_ScriptDir%\SubScripts\SpeechModules\VerbsSynonyms.ahk
 #Include %A_ScriptDir%\SubScripts\SpeechModules\Punctuation.ahk
 #Include %A_ScriptDir%\SubScripts\SpeechModules\SentencesInsertions.ahk
+#Include %A_ScriptDir%\SubScripts\SpeechModules\BigWordRemover.ahk
+
 
 
