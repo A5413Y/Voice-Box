@@ -1,4 +1,4 @@
-Hotstring
+Hotstring (https://github.com/menixator/hotstring)
 ===
 This is a library that adds a dynamic hotstring feature for Autohotkey.
 
