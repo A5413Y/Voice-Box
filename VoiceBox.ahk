@@ -60,10 +60,10 @@ SetWorkingDir %A_ScriptDir%
 ; Speech Modules
 #Include %A_ScriptDir%\SubScripts\SpeechModules\ContractionsFormal.ahk
 #Include %A_ScriptDir%\SubScripts\SpeechModules\ContractionsInformal.ahk
-#Include %A_ScriptDir%\SubScripts\SpeechModules\Bambifier\BambiPronouns.ahk
+#Include %A_ScriptDir%\SubScripts\SpeechModules\ThirdPerson\3rdPronouns.ahk
 #Include %A_ScriptDir%\SubScripts\SpeechModules\Giggles.ahk
 #Include %A_ScriptDir%\SubScripts\SpeechModules\WordsReplacer.ahk
-#Include %A_ScriptDir%\SubScripts\SpeechModules\Bambifier\Bambi3rdPersonVerbs.ahk
+#Include %A_ScriptDir%\SubScripts\SpeechModules\ThirdPerson\3rdPersonVerbs.ahk
 #Include %A_ScriptDir%\SubScripts\SpeechModules\WordsRandomizer.ahk
 #Include %A_ScriptDir%\SubScripts\SpeechModules\Phonetic.ahk
 #Include %A_ScriptDir%\SubScripts\SpeechModules\StatusCodes.ahk
@@ -71,6 +71,7 @@ SetWorkingDir %A_ScriptDir%
 #Include %A_ScriptDir%\SubScripts\SpeechModules\Punctuation.ahk
 #Include %A_ScriptDir%\SubScripts\SpeechModules\SentencesInsertions.ahk
 #Include %A_ScriptDir%\SubScripts\SpeechModules\BigWordRemover.ahk
+#Include %A_ScriptDir%\SubScripts\SpeechModules\ShowMistakes.ahk
 
 
 
