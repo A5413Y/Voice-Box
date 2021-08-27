@@ -1,15 +1,15 @@
 ;------------------------------------------------------------------------------
 ; Verbs synonyms
 ;------------------------------------------------------------------------------
-; Replaces some specifics verbs with more fitting synonyms. ("Bambi laughs" => "Bambi giggles")
+; Replaces some specifics verbs with more fitting synonyms. ("Drone laughs" => "Drone giggles")
 
 loadVerbsSynonyms(state) {
 	if (state == true) {
 		Hotstring("B Z")
-		Hotstring(":bambi: laugh", " giggles")
-		Hotstring(":bambi: laughs", " giggles")
-		Hotstring(":bambi: think", " believes") ; Bambi doesn't think
-		Hotstring(":bambi: thinks", " believes")
+		Hotstring(":: laugh", " giggles")
+		Hotstring(":: laughs", " giggles")
+		Hotstring(":: think", " believes") ; don't think
+		Hotstring(":: thinks", " believes")
 		Hotstring("reset")
 	}
 }
