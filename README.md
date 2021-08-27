@@ -1,7 +1,11 @@
-# Dumtalk AHK
+# Voice Box
 ![Dumbtalk Script Icon - Running_128](https://user-images.githubusercontent.com/5974879/118271520-af706a80-b4c1-11eb-8d0a-18f69c791f4c.png)
 
 This script automatically replaces what you type in discord chat with more dumb stuff.
+
+## CW and Background
+The original project this is forked from was about Disney Deer. This README and the downloaded project should be relatively free from references, but if you'd like to look around the project or contribute, it's something you should be aware of.
+
 
 ## Features
 
@@ -16,7 +20,7 @@ This script automatically replaces what you type in discord chat with more dumb 
 - Download
 - Extract the archive
 - Edit the file "settings.ini" if you wish (changes to that file are only taken into account when the script starts)
-- Double-click on the "Bambi Dumbtalk Script.exe" file to launch the script. It should now work on the Discord desktop app
+- Double-click on the exe file to launch the script. It should now work on the Discord desktop app
 
 > Keep the two files in the same folder. The .exe needs the settings.ini file in order to work
 
@@ -39,4 +43,4 @@ You will need to exit and restart the script in order for the new settings to be
 
 ## Known bugs I made
 
-- a bunch of bambis (anything but the bambifier basically) arent replaced by custom pronouns 
+- a bunch of deers (anything but the deerifier basically) arent replaced by custom pronouns 
