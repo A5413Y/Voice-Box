@@ -1,7 +1,11 @@
-# Dumtalk AHK
+# Voice Box
 ![Dumbtalk Script Icon - Running_128](https://user-images.githubusercontent.com/5974879/118271520-af706a80-b4c1-11eb-8d0a-18f69c791f4c.png)
 
 This script replaces what you type with more dumb stuff.
+
+## CW and Background
+The original project this is forked from was about Disney Deer. This README and the downloaded project should be relatively free from references, but if you'd like to look around the project or contribute, it's something you should be aware of.
+
 
 ## Features
 
