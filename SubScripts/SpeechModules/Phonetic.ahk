@@ -15,7 +15,7 @@ loadPhonetic(state) {
 		Hotstring(":?:ome", "um")
 		Hotstring(":?:ewd", "ood")
 		Hotstring(":?:ph", "f")
-		Hotstring(":?:ing", "in'")
+		Hotstring(":?:ing", "in")
 		Hotstring(":?:ough", "uff")
 		Hotstring("reset")
 	}
