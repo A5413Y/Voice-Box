@@ -3,9 +3,9 @@
 ;------------------------------------------------------------------------------
 ; Assign setting values from the ini file to global variables
 
-; Bambi Mode: Forces you to refer to yourself as Bambi (ie. "I" => "Bambi", "My" => "Bambi's"...)
-IniRead, bambiMode_Setting, %A_ScriptDir%\settings.ini, SETTINGS, bambiMode
-global bambiMode = %bambiMode_Setting%
+; Bambi Mode: Forces you to refer to yourself as whatever your Custom Pronoun is set to (ie. "I" => "Doll", "My" => "Toys's"...)
+IniRead, 3rdMode_Setting, %A_ScriptDir%\settings.ini, SETTINGS, 3rdMode
+global 3rdMode = %3rdMode_Setting%
 
 ; Formal contractions: aren't, could've, how're, etc...
 IniRead, formalContractions_Setting, %A_ScriptDir%\settings.ini, SETTINGS, formalContractions
@@ -27,15 +27,15 @@ global wordReplacer = %wordReplacer_Setting%
 IniRead, wordsRandomizer_Setting, %A_ScriptDir%\settings.ini, SETTINGS, wordsRandomizer
 global wordsRandomizer = %wordsRandomizer_Setting%
 
-; Phonetic: Replaces some common word sounds with phonetically similar ones (ie. "-ome" => "-um", "-ing" => "-in'")
+; Phonetic: Replaces some common word sounds with phonetically similar ones (ie. "-ome" => "-um", "-ing" => "-in")
 IniRead, phonetic_Setting, %A_ScriptDir%\settings.ini, SETTINGS, phonetic
 global phonetic = %phonetic_Setting%
 
-; Status codes: Replaces cum with cum
+; Status Codes: Allows easy typing of HexCorp drone status codes by typing d### https://www.hexcorp.net/drone-status-codes-v2 (A few of the codes have been slightly modified to be more generic to make them appropiate for a wider variety of drones)
 IniRead, statusCodes_Setting, %A_ScriptDir%\settings.ini, SETTINGS, statusCodes
 global statusCodes = %statusCodes_Setting%
 
-; Verbs synonyms: Replaces some specifics verbs with more fitting synonyms. ("Bambi laughs" => "Bambi giggles")
+; Verbs synonyms: Replaces some specifics verbs with more fitting synonyms. ("Pet laughs" => Pet giggles")
 IniRead, verbsSynonyms_Setting, %A_ScriptDir%\settings.ini, SETTINGS, verbsSynonyms
 global verbsSynonyms = %verbsSynonyms_Setting%
 
@@ -55,6 +55,9 @@ global hornyThoughts = %hornyThoughts_Setting%
 IniRead, bigWordLength_Setting, %A_ScriptDir%\settings.ini, SETTINGS, bigWordLength
 global bigWordLength = bigWordLength_Setting
 
+; Show Mistakes: Makes sure you show off all your silliness by not letting you undo things
+IniRead, ShowMistakes_Setting, %A_ScriptDir%\settings.ini, SETTINGS, ShowMistakes
+global ShowMistakes = %ShowMistakes_Setting%
 ;------------------------------------------------------------------------------
 ; DEBUG
 ;------------------------------------------------------------------------------
@@ -84,7 +87,7 @@ if (%settingSummary_Setting%) {
 		
 		[SETTINGS]
 		Application Handled = %applicationHandled_Setting%
-		Bambi Mode = %bambiMode_Setting%
+		Third Person Mode = %3rdMode_Setting%
 		Informal Contractions = %informalContractions_Setting%
 		Formal Contractions = %formalContractions_Setting%
 		Giggles = %giggles_Setting%
@@ -98,6 +101,7 @@ if (%settingSummary_Setting%) {
 		Phonetic Setting = %phonetic_Setting%
 		Status Codes = %statusCodes_Setting%
 		Big Word Remover = %bigWordLength_Setting%
+		Show Mistakes = %ShowMistakes_Setting%
 		
 		(You can prevent this window to show up by setting the key "settingSummary" to false in the "setting.ini" file)
 	)

@@ -32,10 +32,10 @@ insertHesitationsAndHornyThoughts() {
 	} else {
 		if (hornyThoughts = true) {
 			Random, Var, 1, 15 ; 1 chance out of 15 to trigger this if we enter this block
-			if (var = 1) {
+			if (var = <= 14) {
 				SendInput {BS 1}
-				if (bambiMode = true) {
-					sStrings := "... *god bambi is horny*... |... *bambi needs to be fucked*... |... *bambi wants to suck cock soooooo bad*... |... *gosh, bambi is like, so ditzy*... |... *Why is bambi so wet?*... |"
+				if (3rdMode = true) {
+					sStrings := "... *god .customPronoun. is horny*... |... *.customPronoun. needs to be fucked*... |... *.customPronoun. wants to suck cock soooooo bad*... |... *gosh, .customPronoun. is like, so ditzy*... |... *Why is .customPronoun. so wet?*... |"
 				} else {
 					sStrings := "... *god I'm horny*... |... *I need to be fucked*... |... *I want to suck cock soooooo bad*... |... *gosh, I'm like, so ditzy*... |... *Why am I so wet?*... |"
 				}

@@ -1,7 +1,7 @@
 ﻿;------------------------------------------------------------------------------
-; Words Replacer
+; Big Word Remover
 ;------------------------------------------------------------------------------
-; Replaces common words with simpler or more bimbo-like versions. (ie. "best" => "bestest", "confused" => "ditzy"...)
+; Removes any word over the chosen character limit and replaces it with a confused noise
 
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.

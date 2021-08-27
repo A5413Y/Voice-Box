@@ -7,15 +7,16 @@ Hotstring("EndChars", "-()[]{}:;""/\,.?!`n `t")
 
 loadContractionsFormal(formalContractions)
 loadContractionsInformal(informalContractions)
-loadBambiPronouns(bambiMode)
+load3rdPronouns(3rdMode)
 loadGiggles(giggles)
 loadWordReplacer(wordReplacer)
-load3rdPersonVerbs(bambiMode)
+load3rdPersonVerbs(3rdMode)
 loadWordsRandomizer(wordsRandomizer)
 loadPhonetic(phonetic)
 loadStatusCodes(statusCodes)
 loadVerbsSynonyms(verbsSynonyms)
 loadPunctuation(punctuation)
+LoadShowMistakes(ShowMistakes)
 if (bigWordLength > 0) {
 	loadBigWordRemover()
 }
