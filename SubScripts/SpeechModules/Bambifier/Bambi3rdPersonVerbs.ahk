@@ -1,10 +1,10 @@
 ﻿;------------------------------------------------------------------------------
-; Bambi 3rd Person Verbs
+; deer 3rd Person Verbs
 ;------------------------------------------------------------------------------
-; Changes verbs to the 3rd person when refering to yourself as Bambi (Non exhaustive list)
+; Changes verbs to the 3rd person when refering to yourself as deer (Non exhaustive list)
 
 #Hotstring B Z ; Conjugates verbs to third person
-; Common bambi related verbs
+; Common deer related verbs
 :: bend:: bends
 :: bounce:: bounces
 :: feel:: feels
@@ -139,7 +139,7 @@ return
 load3rdPersonVerbs(state) {
 	if (state == true) {
 		Hotstring("B Z")
-		; removes "'" just for this hotstring + reset automatic replacement (to avoid stuff like "bambi would likes")
+		; removes "'" just for this hotstring + reset automatic replacement (to avoid stuff like "deer would likes")
 		; Hotstring("EndChars", "-()[]{}:;""/\,.?!`n `t")
 		Hotstring(":: am", customPronoun . " is")
 		Hotstring("::i'm", customPronoun . " is")

@@ -3,7 +3,7 @@
 ;------------------------------------------------------------------------------
 ; Assign setting values from the ini file to global variables
 
-; Bambi Mode: Forces you to refer to yourself as whatever your Custom Pronoun is set to (ie. "I" => "Doll", "My" => "Toys's"...)
+; 3rd Person Mode: Forces you to refer to yourself as whatever your Custom Pronoun is set to (ie. "I" => "Doll", "My" => "Toys's"...)
 IniRead, 3rdMode_Setting, %A_ScriptDir%\settings.ini, SETTINGS, 3rdMode
 global 3rdMode = %3rdMode_Setting%
 
@@ -47,7 +47,7 @@ global punctuation = %punctuation_Setting%
 IniRead, hesitationMarks_Setting, %A_ScriptDir%\settings.ini, SETTINGS, hesitationMarks
 global hesitationMarks = %hesitationMarks_Setting%
 
-; Horny Thoughts: Inserts some horny thoughts (ie. "... *god bambi is horny*...") from time to time (less common than hesitation marks)
+; Horny Thoughts: Inserts some horny thoughts (ie. "... *god deer is horny*...") from time to time (less common than hesitation marks)
 IniRead, hornyThoughts_Setting, %A_ScriptDir%\settings.ini, SETTINGS, hornyThoughts
 global hornyThoughts = %hornyThoughts_Setting%
 
@@ -73,7 +73,7 @@ if (applicationHandled == "ALL") {
 }
 
 
-; Custom Bambi Pronouns: replaces Bambi with user input name etc
+; Custom Pronouns: replaces I, etc, with user input name etc
 IniRead, customPronoun_Setting, %A_ScriptDir%\settings.ini, SETTINGS, customPronoun
 global customPronoun = customPronoun_Setting
 

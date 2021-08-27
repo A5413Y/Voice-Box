@@ -1,7 +1,7 @@
 ;------------------------------------------------------------------------------
-; Bambi Pronouns
+; Custom Pronouns
 ;------------------------------------------------------------------------------
-; Forces you to refer to yourself as Bambi (ie. "I" => "Bambi", "My" => "Bambi's"...)
+; Forces you to refer to yourself as a custom pronoun you set (ie. "I" => "drone", "My" => "drone's"...)
 
 loadBambiPronouns(state) {
 	if (state == true) {

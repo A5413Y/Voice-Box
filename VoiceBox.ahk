@@ -2,19 +2,19 @@
  * * * Compile_AHK SETTINGS BEGIN * * *
 
 [AHK2EXE]
-Exe_File=%In_Dir%\Bambi Dumbtalk Script.exe
+Exe_File=%In_Dir%\VoiceBox.exe
 Compression=0
 Created_Date=1
 [VERSION]
-Set_Version_Info=1
-Company_Name=Triskelia (Triskel#0001)
-File_Description=Script automatically replacing what you type in discord desktop app with more Bambi-like stuff.
-File_Version=1.0.1.0
-Inc_File_Version=0
-Internal_Name=Bambi Dumbtalk Script.ahk
-Legal_Copyright=(c) 2017-2021 Triskelia (Triskel#0001)
-Original_Filename=Bambi Dumbtalk Script.ahk
-Product_Name=Bambi Dumbtalk Script
+Set_Version_Info=2
+Company_Name=VoiceBox
+File_Description=A large number of configurable automatic typing changes to help you sound dumber, or otherwise more conditioned
+File_Version=2
+Inc_File_Version=1
+Internal_Name=VoiceBox.ahk
+Legal_Copyright= Free Use (Hehe)
+Original_Filename=VoiceBox.ahk
+Product_Name=VoiceBox
 [ICONS]
 Icon_1=%In_Dir%\Resources\img\Dumbtalk-Script-Icon-Running.ico
 Icon_2=%In_Dir%\Resources\img\Dumbtalk-Script-Icon-Running.ico
@@ -28,16 +28,15 @@ Icon_5=%In_Dir%\Resources\img\Dumbtalk-Script-Icon-Paused.ico
 /*
 Native Compile SETTINGS BEGIN
 ; @Ahk2Exe-SetMainIcon %A_ScriptDir%\Resources\img\Dumbtalk-Script-Icon-Running.ico
-; @Ahk2Exe-ExeName %A_ScriptDir%\Bambi Dumbtalk Script.ahk
+; @Ahk2Exe-ExeName %A_ScriptDir%\VoiceBox.ahk
 Native Compile SETTINGS END
 */
 
 ;------------------------------------------------------------------------------
-; BAMBI DUMBTALK SCRIPT
+; VoiceBox
 ;------------------------------------------------------------------------------
-; a fun script made by Bambi Trisky for her fellow bambi friends <3
 
-version = 1.0.1
+version = 2.0.0
 #Include %A_ScriptDir%\SubScripts\Utils\Settings.ahk
 
 SetTitleMatchMode, 2

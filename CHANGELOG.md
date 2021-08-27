@@ -1,10 +1,10 @@
-# Bambi Dumbtalk Script Changelog
+# VoiceBox Changelog
 
 ## 1.0.1 (2021-05-15)
 
 ### Fixes
 
-- Fixe `i have` becoming `bambi is` in bambi mode
+- Fixe `i have` becoming `deer is` in deer mode
 - New contractions and some refactoring
 - Some other minor bug fixes & tweaks
 
@@ -12,7 +12,7 @@
 
 ### New speech features
 
-- Bambi Mode: You can now disable the bambi mode in the settings to just sound like a regular bimbo
+- Deer Mode: You can now disable the deer mode in the settings to just sound like a regular bimbo
 - Forced Contractions: aren't, could've, how're, gonna, wanna, etc...
 - Phonetic: Replaces some common word sounds with phonetically similar ones (ie. "-ome" => "-um", "-ing" => "-in'")
 - Punctuation: Randomly turns periods into questions, exclamations or tilde

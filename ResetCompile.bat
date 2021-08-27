@@ -1,2 +1,2 @@
-Taskkill /IM "Bambi Dumbtalk Script.exe" /F
-del "Bambi Dumbtalk Script.exe"
+Taskkill /IM "VoiceBox.exe" /F
+del "VoiceBox.exe"

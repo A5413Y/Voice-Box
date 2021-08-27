@@ -1,22 +1,21 @@
 # Dumtalk AHK
 ![Dumbtalk Script Icon - Running_128](https://user-images.githubusercontent.com/5974879/118271520-af706a80-b4c1-11eb-8d0a-18f69c791f4c.png)
 
-This script automatically replaces what you type in discord chat with more dumb stuff.
+This script replaces what you type with more dumb stuff.
 
 ## Features
 
 - Most features can be configured through the settings.ini file
 - In addition to the existing ones:
-- New custom pronouns, can change "Bambi" to whatever
-- Long words go poof
-- Hexcorp status codes
+- New custom pronouns
+- Long word go poof
 
-## Instalation instructions
+## Installation instructions
 
 - Download
 - Extract the archive
-- Edit the file "settings.ini" if you wish (changes to that file are only taken into account when the script starts)
-- Double-click on the "Bambi Dumbtalk Script.exe" file to launch the script. It should now work on the Discord desktop app
+- Edit the file "settings.ini" (changes to that file are only taken into account when the script starts)
+- Double-click on the exe file to launch the script. It should now work on the Discord desktop app
 
 > Keep the two files in the same folder. The .exe needs the settings.ini file in order to work
 
@@ -35,8 +34,8 @@ You will need to exit and restart the script in order for the new settings to be
 ## Known bugs from original
 
 - Some verbs will sometimes automatically be conjugated to third person when they shouldn't, seems to be a limitation with Autohotkey
-- On rare occasions, " have" will be replaced by " has" in bambi mode. I've tried to fix it, but it seems to be the only way to have the "I have" replaced by "Bambi has" working, which is more important. And since "has" instead of "have" often sounds cute, I guess we can live with that.
+- On rare occasions, " have" will be replaced by " has" in deer mode. I've tried to fix it, but it seems to be the only way to have the "I have" replaced by "deer has" working, which is more important. And since "has" instead of "have" often sounds cute, I guess we can live with that.
 
 ## Known bugs I made
 
-- a bunch of bambis (anything but the bambifier basically) arent replaced by custom pronouns 
+- a bunch of deers (anything but the deerifier basically) arent replaced by custom pronouns 

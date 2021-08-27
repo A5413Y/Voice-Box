@@ -1,13 +1,13 @@
 @echo ========================================================================================
 @echo Prerequisites: 
 @echo - Need to have the 7Zip directory added to the PATH environment variable of Windows
-@echo - The Bambi Dumbtalk Script.exe file need to have already been compliled with Autohotkey
+@echo - The VoiceBox.exe file needs to have already been compliled with Autohotkey
 @echo ========================================================================================
 @echo.
 
 @echo off
 @set /p version="version: "
-@set packageName=Bambi_Dumbtalk_Script_v%version%
+@set packageName=VoiceBox_v%version%
 
 @cd %~dp0
 @set "PROJECT_DIR=%cd%"
@@ -22,7 +22,7 @@ if not exist "Build\" @mkdir "Build"
 
 :: Copy the necessary files to the package folder
 @robocopy "%PROJECT_DIR%" "Build\%packageName%" "README.md"
-@robocopy "%PROJECT_DIR%" "Build\%packageName%" "Bambi Dumbtalk Script.exe"
+@robocopy "%PROJECT_DIR%" "Build\%packageName%" "VoiceBox.exe"
 @robocopy "%PROJECT_DIR%" "Build\%packageName%" "settings.ini"
 
 :: Zip the package
