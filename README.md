@@ -43,3 +43,5 @@ You will need to exit and restart the script in order for the new settings to be
 ## Known bugs I made
 
 - a bunch of deers (anything but the deerifier basically) arent replaced by custom pronouns 
+- Big Word Replacer and Show Mistakes settings are currently mutually exclusive, if you would like to be chided for using the backspace key, Big Word Replacer will need to be disabled (Set to 0)
+-Big Word Replacer can also cause some weirdness if it is set lower then the size of a word the script inserts, this is mostly harmless but can sometimes make HexCodes look funny (Cute tho, silly lil bimbo drones)
