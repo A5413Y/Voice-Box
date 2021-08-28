@@ -4,7 +4,7 @@
 This script replaces what you type with more dumb stuff.
 
 ## CW and Background
-The original project this is forked from was about Disney Deer. This README and the downloaded project should be relatively free from references, but if you'd like to look around the project or contribute, it's something you should be aware of.
+The original project this is forked from was about a rather nortorious strain of Bimbo Hypno, hence forth being referred to as Disney Deer. This README and the downloaded project should be relatively free from references, but if you'd like to look around the project or contribute, it's something you should be aware of.
 
 
 ## Features
@@ -42,6 +42,6 @@ You will need to exit and restart the script in order for the new settings to be
 
 ## Known bugs I made
 
-- a bunch of deers (anything but the deerifier basically) arent replaced by custom pronouns 
+- Not all deers may be gone
 - Big Word Replacer and Show Mistakes settings are currently mutually exclusive, if you would like to be chided for using the backspace key, Big Word Replacer will need to be disabled (Set to 0)
 -Big Word Replacer can also cause some weirdness if it is set lower then the size of a word the script inserts, this is mostly harmless but can sometimes make HexCodes look funny (Cute tho, silly lil bimbo drones)
