@@ -28,7 +28,7 @@
 :: agree:: agrees
 :: arrive:: arrives
 :: ask:: asks
-:: brings:: brings
+:: bring:: brings
 :: build:: builds
 :: buy:: buys
 :: call:: calls
@@ -103,7 +103,7 @@
 :: answer:: answers
 :: apologize:: apologizes
 :: applaud:: applauds
-:: approache:: approaches
+:: approach:: approaches
 :: approve:: approves
 :: argue:: argues
 :: arise:: arises
@@ -120,11 +120,11 @@
 :: bet:: bets
 :: bite:: bites
 :: blow:: blows
-:: blushe:: blushes
+:: blush:: blushes
 :: break:: breaks
 :: breathe:: breathes
 :: breed:: breeds
-:: caresse:: caresses
+:: caress:: caresses
 :: carry:: carries
 ;more to add: https://www.worldclasslearning.com/english/five-verb-forms.html
 :: hope:: hopes
