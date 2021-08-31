@@ -17,6 +17,7 @@ loadStatusCodes(statusCodes)
 loadVerbsSynonyms(verbsSynonyms)
 loadPunctuation(punctuation)
 LoadShowMistakes(ShowMistakes)
+;LoadModuleOne(ModuleOne)
 if (bigWordLength > 0) {
 	loadBigWordRemover()
 }

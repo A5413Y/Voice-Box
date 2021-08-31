@@ -51,13 +51,17 @@ global hesitationMarks = %hesitationMarks_Setting%
 IniRead, hornyThoughts_Setting, %A_ScriptDir%\settings.ini, SETTINGS, hornyThoughts
 global hornyThoughts = %hornyThoughts_Setting%
 
-; Big Word Remover: Replaces big words with confused noises
+; No Big Words: Replaces words of the specified length or over with confused noises. Set to 0 to disable. (Currently incompatible with Show Mistakes)
 IniRead, bigWordLength_Setting, %A_ScriptDir%\settings.ini, SETTINGS, bigWordLength
 global bigWordLength = bigWordLength_Setting
 
-; Show Mistakes: Makes sure you show off all your silliness by not letting you undo things
+; Show Mistakes: Will disable the backspace key and chide you whenever you attempt to use it (Currently incompatible with No Big Words)
 IniRead, ShowMistakes_Setting, %A_ScriptDir%\settings.ini, SETTINGS, ShowMistakes
 global ShowMistakes = %ShowMistakes_Setting%
+
+; Template
+; IniRead, ModuleOne_Setting, %A_ScriptDir%\settings.ini, SETTINGS, ModuleOne
+; global ModuleOne = %ModuleOne_Setting%
 ;------------------------------------------------------------------------------
 ; DEBUG
 ;------------------------------------------------------------------------------
@@ -102,7 +106,7 @@ if (%settingSummary_Setting%) {
 		Status Codes = %statusCodes_Setting%
 		Big Word Remover = %bigWordLength_Setting%
 		Show Mistakes = %ShowMistakes_Setting%
-		
+		;Module One = %ModuleOne_Setting%
 		(You can prevent this window to show up by setting the key "settingSummary" to false in the "setting.ini" file)
 	)
 }
