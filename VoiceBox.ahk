@@ -71,6 +71,7 @@ SetWorkingDir %A_ScriptDir%
 #Include %A_ScriptDir%\SubScripts\SpeechModules\SentencesInsertions.ahk
 #Include %A_ScriptDir%\SubScripts\SpeechModules\BigWordRemover.ahk
 #Include %A_ScriptDir%\SubScripts\SpeechModules\ShowMistakes.ahk
+#Include %A_ScriptDir%\SubScripts\SpeechModules\NoSwears.ahk
 ;#Include %A_ScriptDir%\SubScripts\SpeechModules\ModuleOne.ahk
 
 

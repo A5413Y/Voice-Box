@@ -60,6 +60,10 @@ IniRead, ShowMistakes_Setting, %A_ScriptDir%\settings.ini, SETTINGS, ShowMistake
 global ShowMistakes = %ShowMistakes_Setting%
 
 ; Template
+IniRead, NoSwears_Setting, %A_ScriptDir%\settings.ini, SETTINGS, NoSwears
+global NoSwears = %NoSwears_Setting%
+
+; Template
 ; IniRead, ModuleOne_Setting, %A_ScriptDir%\settings.ini, SETTINGS, ModuleOne
 ; global ModuleOne = %ModuleOne_Setting%
 ;------------------------------------------------------------------------------
@@ -106,7 +110,8 @@ if (%settingSummary_Setting%) {
 		Status Codes = %statusCodes_Setting%
 		Big Word Remover = %bigWordLength_Setting%
 		Show Mistakes = %ShowMistakes_Setting%
-		;Module One = %ModuleOne_Setting%
+		No Swearing = %NoSwears_Setting%
+		
 		(You can prevent this window to show up by setting the key "settingSummary" to false in the "setting.ini" file)
 	)
 }

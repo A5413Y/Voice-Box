@@ -32,14 +32,6 @@ loadWordReplacer(state) {
 		Hotstring("::through", "thru")
 		Hotstring("::thanks", "thankies")
 		Hotstring("::whatever", "whatevz")
-		Hotstring("::cum","cummies")
-		Hotstring("::sperm","cummies")
-		Hotstring("::jizz","cummies")
-		Hotstring("::stupid","stoopid")
-		Hotstring("::Motherfucker","stoopid head")
-		Hotstring("::shit","poop")
-		Hotstring("::crap","poop")
-		
 		Hotstring("reset")
 	}
 }

@@ -5,6 +5,7 @@
 
 Hotstring("EndChars", "-()[]{}:;""/\,.?!`n `t")
 
+;LoadModuleOne(ModuleOne)
 loadContractionsFormal(formalContractions)
 loadContractionsInformal(informalContractions)
 load3rdPronouns(3rdMode)
@@ -17,7 +18,7 @@ loadStatusCodes(statusCodes)
 loadVerbsSynonyms(verbsSynonyms)
 loadPunctuation(punctuation)
 LoadShowMistakes(ShowMistakes)
-;LoadModuleOne(ModuleOne)
+LoadNoSwears(NoSwears)
 if (bigWordLength > 0) {
 	loadBigWordRemover()
 }
