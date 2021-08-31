@@ -52,6 +52,7 @@ You will need to exit and restart the script in order for the new settings to be
 - Big Word Replacer can also cause some weirdness if it is set lower then the size of a word the script inserts, this is mostly harmless but can sometimes make HexCodes look funny (Cute tho, silly lil bimbo drones) 
 - Some verbs will sometimes automatically be conjugated to third person when they shouldn't, seems to be a limitation with Autohotkey
 - On rare occasions, " have" will be replaced by " has" in deer mode. I've tried to fix it, but it seems to be the only way to have the "I have" replaced by "deer has" working, which is more important. And since "has" instead of "have" often sounds cute, I guess we can live with that.
+- Horny Thoughts is currently entirely non functional (Sorry for breaking the build)
 
 ## Features to come
 - Clown Mode *honk*
