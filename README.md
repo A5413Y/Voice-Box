@@ -58,5 +58,5 @@ You will need to exit and restart the script in order for the new settings to be
 - Clown Mode *honk*
 - No swearing
 - Disable the icon to make script harder to turn off
-
+- Default HexCorp codes for the actual HexDrones out there
 
