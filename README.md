@@ -23,6 +23,7 @@ The original project this is forked from was about a rather nortorious strain of
 - Hesitation Marks: Inserts some hesitation marks (ie. "ummm..." or "like...") from time to time
 - No Big Words: Replaces words of the specified length or over with confused noises. 
 - Show Mistakes: Will disable the backspace key and chide you whenever you attempt to use it
+- No Swearing: Will replace swears and profanity with childish versions, still in progress
 - App specific: Can set the script to only function for specific apps i.e Discord
 
 ## Installation instructions
