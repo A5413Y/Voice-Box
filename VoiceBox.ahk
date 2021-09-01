@@ -16,10 +16,10 @@ Legal_Copyright= Free Use (Hehe)
 Original_Filename=VoiceBox.ahk
 Product_Name=VoiceBox
 [ICONS]
-Icon_1=%In_Dir%\Resources\img\voicebox.ico
-Icon_2=%In_Dir%\Resources\img\voicebox.ico
-Icon_3=%In_Dir%\Resources\img\voicebox_paused.ico
-Icon_4=%In_Dir%\Resources\img\voicebox.ico
+Icon_1=%In_Dir%\Resources\img\voice_box.ico
+Icon_2=%In_Dir%\Resources\img\voice_box.ico
+Icon_3=%In_Dir%\Resources\img\voice_box_paused.ico
+Icon_4=%In_Dir%\Resources\img\voice_box.ico
 Icon_5=%In_Dir%\Resources\img\voicebox_paused.ico
 
 * * * Compile_AHK SETTINGS END * * *
