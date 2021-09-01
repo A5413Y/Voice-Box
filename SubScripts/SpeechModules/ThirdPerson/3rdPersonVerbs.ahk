@@ -141,7 +141,7 @@ load3rdPersonVerbs(state) {
 		Hotstring("B Z")
 		; removes "'" just for this hotstring + reset automatic replacement (to avoid stuff like "toy would likes")
 		; Hotstring("EndChars", "-()[]{}:;""/\,.?!`n `t")
-		Hotstring(":: am", customPronoun . " is")
+		Hotstring(":: am", " is")
 		Hotstring("::i'm", customPronoun . " is")
 		Hotstring("::im", customPronoun . " is")
 		Hotstring(":: have", " has")
