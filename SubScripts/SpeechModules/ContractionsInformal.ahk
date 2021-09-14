@@ -3,8 +3,7 @@
 ;------------------------------------------------------------------------------
 ; aint, aint, gonna, wanna, etc... (will override some formal contractions)
 
-loadContractionsInformal(state) {
-	if (state == true) {
+if (contractionsInformal = 1){
 		Hotstring("B Z")
 
 		; Generic negations
@@ -61,4 +60,3 @@ loadContractionsInformal(state) {
 		Hotstring("::want to", "wanna")
 		Hotstring("reset")
 	}
-}

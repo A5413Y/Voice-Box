@@ -5,12 +5,12 @@
 ; Horny Thoughts: Inserts some horny thoughts (ie. "... *god deer is horny*...") from time to time (less common than hesitation marks)
 
 ; Script had some issues and weirdness with random insertion, so it had to only be allowed after some specific words
-loadHesitationsAndHornyThoughts(state) {
+if (hornyThoughts == 1 OR hesitationMarks == 1){
 	Hotstring("B0 Z")
 	Hotstring(":*:and ", Func("insertHesitationsAndHornyThoughts"))
 	Hotstring(":*:to ", Func("insertHesitationsAndHornyThoughts"))
 	Hotstring(":?*:, ", Func("insertHesitationsAndHornyThoughts"))
-	if (formalContractions = false) { ; Breaks formal contraction, only activate these hotstrings if it's off
+	if (contractionsFormal = 0) { ; Breaks formal contraction, only activate these hotstrings if it's off
 		Hotstring(":*:could ", Func("insertHesitationsAndHornyThoughts"))
 		Hotstring(":*:should ", Func("insertHesitationsAndHornyThoughts"))
 		Hotstring(":*:would ", Func("insertHesitationsAndHornyThoughts"))
@@ -19,70 +19,35 @@ loadHesitationsAndHornyThoughts(state) {
 }
 
 insertHesitationsAndHornyThoughts() {
+	global hesitationMarks
+	global hornyThoughts
+	global 3rdPronouns
+	global Pronoun
 	;TODO Rework the way probabilities are handled (Maybe add configuration from the .ini)
-	Random, Var, 1, 5 ; will trigger one of the next two outcomes
-	if (var <= 3) {
-		if (hesitationMarks) {
+	Random, Var, 1, 4 ; will trigger one of the next two outcomes
+	if (var = 1) {
+		if (hesitationMarks = 1) {
 			Random, Var, 1, 5 ; 1 chance out of 5 to trigger this if we enter this block
 			if (var = 1) {
 				sStrings := "like... |like, |like, |hmm... |like... |uhhh... |ummm... |um |er |uh |"
 				randomString(sStrings, 10)
 			}
-		}
-	} else {
-		if (hornyThoughts = true) {
-			Random, Var, 1, 15 ; 1 chance out of 15 to trigger this if we enter this block
-			if (var = <= 14) {
-				SendInput {BS 1}
-				if (3rdMode = true) {
-					sStrings := "... *god .customPronoun. is horny*... |... *.customPronoun. needs to be fucked*... |... *.customPronoun. wants to suck cock soooooo bad*... |... *gosh, .customPronoun. is like, so ditzy*... |... *Why is .customPronoun. so wet?*... |"
-				} else {
-					sStrings := "... *god I'm horny*... |... *I need to be fucked*... |... *I want to suck cock soooooo bad*... |... *gosh, I'm like, so ditzy*... |... *Why am I so wet?*... |"
+		} else {
+			
+			if (hornyThoughts = 1) {
+				Random, Var, 1, 15 ; 1 chance out of 15 to trigger this if we enter this block
+				if (var = 1) {
+					SendInput {BS 1}
+					if (3rdPronouns = 1) {
+						sStrings := "... *god " . Pronoun . " is horny*... |... *" . Pronoun . " needs to be fucked*... |... *" . Pronoun . " wants to suck cock soooooo bad*... |... *gosh, " . Pronoun . " is like, so ditzy*... |... *Why is " . Pronoun . " so wet?*... |"
+					} else {
+						sStrings := "... *god I'm horny*... |... *I need to be fucked*... |... *I want to suck cock soooooo bad*... |... *gosh, I'm like, so ditzy*... |... *Why am I so wet?*... |"
+					}
+					randomString(sStrings, 5)
 				}
-				randomString(sStrings, 5)
 			}
-		}
-	}
+		}		 
+	} 
 }
 
-
-;---------------------------------------------------------
-; Randomly add deer's thoughts between words ==> DOESN'T WORK
-;---------------------------------------------------------
-thoughtsBetweenWords(state) {
-	Hotstring("B0 Z")
-	Hotstring(":?*: ", Func("insertsThoughtsBetweenWords"))
-	Hotstring("reset")
-}
-
-insertsThoughtsBetweenWords() {
-	Random, Var, 1, 50
-	if (var = 1) {
-		SendInput {BS 1}
-		; SendInput {left 2}
-		sStrings := ", like, | hmmm... | uhhh... | ummm... | um | er | uh |"
-		randomString(sStrings, 7)
-		; SendInput {right 2}
-	}
-}
-
-; randomly add stuff at end of 10% of messages (only when pressing Enter)
-; /!\ When enabled, the Enter key doesn't triggers other hotkeys anymore
-/* #InputLevel 10
- * Enter::
- *   send, %A_Space%
- *   Random, Var, 1, 1
- *     AutoTrim, off
- *     if (var = 1) {
- *     RandomStuff =
- *     ( LTrim
- *     ` *giggles*| <3| ~|
- *     )
- *     randomString(RandomStuff, 3)
- *     sendPlay, {enter}
- *     } else {
- *     sendPlay, {enter}
- *     }
- * return
- */
 

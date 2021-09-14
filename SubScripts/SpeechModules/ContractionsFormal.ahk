@@ -3,8 +3,7 @@
 ;------------------------------------------------------------------------------
 ; aren't, could've, how're, etc...
 
-loadContractionsFormal(state) {
-	if (state == true) {
+if (contractionsFormal = 1){
 		Hotstring("B Z0")
 
 		; Generic
@@ -106,4 +105,3 @@ loadContractionsFormal(state) {
 
 		Hotstring("reset")
 	}
-}

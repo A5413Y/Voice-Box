@@ -2,9 +2,7 @@
 ; Words randomizers
 ;------------------------------------------------------------------------------
 ; Replaces some words from a pool of more fitting synonyms. (like world replacer, but with several possible outcome)
-
-loadWordsRandomizer(state) {
-	if (state == true) {
+if (wordsRandomizer = 1){
 	Hotstring("B Z")
 		
 	Hotstring(":*:yes", Func("randomString").Bind("yis|yas|yus|yes", 4))
@@ -46,4 +44,3 @@ loadWordsRandomizer(state) {
 
 	Hotstring("reset")
 	}
-}

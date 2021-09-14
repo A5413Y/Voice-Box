@@ -2,9 +2,7 @@
 ; Status Codes
 ;------------------------------------------------------------------------------
 ; Replaces codes with full versions from https://www.hexcorp.net/drone-status-codes-v2
-
-loadStatusCodes(state) {
-	if (state == true) {
+if (statusCodes = 1){
 		Hotstring("::d000", "000: Statement :: Previous statement malformed. Retracting and correcting.")
 
 		Hotstring("::d001", "001: Signal :: 񝀧")
@@ -105,4 +103,3 @@ loadStatusCodes(state) {
 		
 		Hotstring("reset")
 	}
-}

@@ -22,18 +22,13 @@ The original project this is forked from was about a rather nortorious strain of
 - Punctuation: Randomly turns periods into questions, exclamations or tilde
 - Hesitation Marks: Inserts some hesitation marks (ie. "ummm..." or "like...") from time to time
 - No Big Words: Replaces words of the specified length or over with confused noises. 
-- Show Mistakes: Will disable the backspace key and chide you whenever you attempt to use it
 - No Swearing: Will replace swears and profanity with childish versions, still in progress
-- App specific: Can set the script to only function for specific apps i.e Discord
 
 ## Installation instructions
 
 - Download
-- Extract the archive
-- Edit the file "settings.ini" (changes to that file are only taken into account when the script starts)
-- Double-click on the exe file to launch the script. It should now work on the Discord desktop app
+- Double-click on the exe file to launch the script. 
 
-> Keep the two files in the same folder. The .exe needs the settings.ini file in order to work
 
 ## Usage
 
@@ -49,15 +44,14 @@ You will need to exit and restart the script in order for the new settings to be
 ## Known bugs I made
 
 - Not all deers may be gone
-- Big Word Replacer and Show Mistakes settings are currently mutually exclusive, if you would like to be chided for using the backspace key, Big Word Replacer will need to be disabled (Set to 0)
 - Big Word Replacer can also cause some weirdness if it is set lower then the size of a word the script inserts, this is mostly harmless but can sometimes make HexCodes look funny (Cute tho, silly lil bimbo drones) 
 - Some verbs will sometimes automatically be conjugated to third person when they shouldn't, seems to be a limitation with Autohotkey
 - On rare occasions, " have" will be replaced by " has" in deer mode. I've tried to fix it, but it seems to be the only way to have the "I have" replaced by "deer has" working, which is more important. And since "has" instead of "have" often sounds cute, I guess we can live with that.
-- Horny Thoughts is currently entirely non functional (Sorry for breaking the build)
+
 
 ## Features to come
 - Clown Mode *honk*
-- No swearing
+- Fixing Show Mistakes feature
 - Disable the icon to make script harder to turn off
 - Default HexCorp codes for the actual HexDrones out there
 

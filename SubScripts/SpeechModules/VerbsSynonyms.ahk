@@ -2,9 +2,7 @@
 ; Verbs synonyms
 ;------------------------------------------------------------------------------
 ; Replaces some specifics verbs with more fitting synonyms. ("Drone laughs" => "Drone giggles")
-
-loadVerbsSynonyms(state) {
-	if (state == true) {
+if (verbsSynonyms = 1){
 		Hotstring("B Z")
 		Hotstring(":: laugh", " giggles")
 		Hotstring(":: laughs", " giggles")
@@ -12,4 +10,3 @@ loadVerbsSynonyms(state) {
 		Hotstring(":: thinks", " believes")
 		Hotstring("reset")
 	}
-}

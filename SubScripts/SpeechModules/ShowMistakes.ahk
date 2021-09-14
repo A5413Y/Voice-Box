@@ -1,11 +1,7 @@
-﻿
-Show_Mistake:
-MsgBox, Good dummies show off how dumb they are
-return
+﻿;show mistakes
 
-loadShowMistakes(state) {
-	if (state == true) {
-		
+if (showMistakes = 1){
 		HotKey, BS, Show_Mistake
-	}
+		
 }
+

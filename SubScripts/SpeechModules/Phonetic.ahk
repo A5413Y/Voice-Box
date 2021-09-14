@@ -3,8 +3,7 @@
 ;------------------------------------------------------------------------------
 ; Replaces some common word sounds with phonetically similar ones (ie. "-ome" => "-um", "-ing" => "-in'")
 
-loadPhonetic(state) {
-	if (state == true) {
+if (phonetic = 1){
 		Hotstring("B Z")
 		; Place exceptions here, words which shouldn't be altered by the next hotstrings
 		Hotstring("::cock", "cock")
@@ -16,7 +15,7 @@ loadPhonetic(state) {
 		Hotstring(":?:ewd", "ood")
 		Hotstring(":?:ph", "f")
 		Hotstring(":?:ing", "in")
-		Hotstring(":?:ough", "uff")
+		Hotstring(":?:kn", "n")
 		Hotstring("reset")
-	}
-}
+}	
+

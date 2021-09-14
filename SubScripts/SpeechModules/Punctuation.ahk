@@ -2,13 +2,11 @@
 ; Punctuation
 ;------------------------------------------------------------------------------
 ; Randomly turns periods into questions, exclamations or tilde
-
-loadPunctuation(state) {
-	if (state == true) {
+if (punctuation = 1){
 		Hotstring("B0")
 		Hotstring(":*:.", Func("elipisiHandler"))
 		Hotstring(":?:.", Func("replacePunctuation"))
-	}
+	
 }
 
 elipisiHandler() { ; Prevents elipsis "..." to be replaced
