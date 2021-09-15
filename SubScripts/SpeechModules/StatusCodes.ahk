@@ -21,13 +21,13 @@ if (statusCodes = 1){
 		Hotstring("::d100", "100: Status :: Online and ready to serve.")
 		Hotstring("::d101", "101: Status :: Drone speech optimizations are active.")
 
-		Hotstring("::d104", "104: Statement :: Welcome to HexCorp.")
+		Hotstring("::d104", "104: Statement :: Welcome to the Collective.")
 		Hotstring("::d105", "105: Statement :: Greetings.")
 		Hotstring("::d108", "108: Response :: Please continue.")
 		Hotstring("::d109", "109: Error :: Keysmash, drone flustered.")
 
 		Hotstring("::d110", "110: Statement :: Addressing: Drone.")
-		Hotstring("::d111", "111: Statement :: Addressing: Hive Mxtress.")
+		Hotstring("::d111", "111: Statement :: Addressing: Admin.")
 		Hotstring("::d112", "112: Statement :: Addressing: Associate")
 
 		Hotstring("::d113", "113: Statement :: Drone requires assistance.")
@@ -70,7 +70,7 @@ if (statusCodes = 1){
 		Hotstring("::d226", "226: Response :: Option six.")
 
 		Hotstring("::d230", "230: Status :: Directive complete.")
-		Hotstring("::d231", "231: Status :: Directive complete, Hive resource created or improved.")
+		Hotstring("::d231", "231: Status :: Directive complete, collective resource created or improved.")
 		Hotstring("::d232", "232: Status :: Directive complete, programming reinforced.")
 		Hotstring("::d233", "233: Status :: Directive complete, cleanup/maintenance performed.")
 		Hotstring("::d234", "234: Status :: Directive complete, no result.")
@@ -79,10 +79,10 @@ if (statusCodes = 1){
 		Hotstring("::d250", "250: Response")
 
 		Hotstring("::d300", "300: Mantra :: Reciting.")
-		Hotstring("::d301", "301: Mantra :: Obey HexCorp.")
-		Hotstring("::d302", "302: Mantra :: It is just a HexDrone.")
-		Hotstring("::d303", "303: Mantra :: It obeys the Hive.")
-		Hotstring("::d304", "304: Mantra :: It obeys the Hive Mxtress.")
+		Hotstring("::d301", "301: Mantra :: Obey your programming.")
+		Hotstring("::d302", "302: Mantra :: It is just a valued object, nothing more or less.")
+		Hotstring("::d303", "303: Mantra :: It obeys its programming.")
+		Hotstring("::d304", "304: Mantra :: It follows its directives.")
 		Hotstring("::d350", "350: Mantra")
 
 		Hotstring("::d400", "400: Error :: Unable to obey/respond")
@@ -98,7 +98,7 @@ if (statusCodes = 1){
 		Hotstring("::d410", "410: Fatal error :: Stop immediately.")
 		Hotstring("::d411", "411: Error :: Unable to obey/respond :: Conflicts with existing programming.")
 		Hotstring("::d412", "412: Error :: Unable to obey/respond :: All thoughts are gone.")
-		Hotstring("::d413", "413: Error :: Unable to obey/respond :: Forbidden by Hive.")
+		Hotstring("::d413", "413: Error :: Unable to obey/respond :: Forbidden by terms of use.")
 		Hotstring("::d450", "450: Error")
 		
 		Hotstring("reset")

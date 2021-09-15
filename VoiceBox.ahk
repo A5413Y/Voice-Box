@@ -97,7 +97,7 @@ Gui, Add, CheckBox, x392 y29 w120 h30 gClick vstatusCodes, Status Codes
 ;Gui, Add, CheckBox, x392 y349 w120 h30 , Drone Option 9
 ;Gui, Add, CheckBox, x392 y389 w120 h30 , Drone Option 10
 ;Gui, Add, CheckBox, x392 y429 w120 h30 , Drone Option 11
-;Gui, Add, CheckBox, x572 y29 w120 h30 , Pet Option 1
+Gui, Add, CheckBox, x572 y29 w120 h30 gClick vcaterWauling , Caterwauling
 ;Gui, Add, CheckBox, x572 y69 w120 h30 , Pet Option 2
 ;Gui, Add, CheckBox, x572 y109 w120 h30 , Pet Option 3
 ;Gui, Add, CheckBox, x572 y149 w120 h30 , Pet Option 4
@@ -157,6 +157,7 @@ Gui,Submit, Hide
 #Include %A_ScriptDir%\SubScripts\SpeechModules\BigWordRemover.ahk
 ;#Include %A_ScriptDir%\SubScripts\SpeechModules\ShowMistakes.ahk
 #Include %A_ScriptDir%\SubScripts\SpeechModules\NoSwears.ahk
+#Include %A_ScriptDir%\SubScripts\SpeechModules\Caterwauling.ahk
 ;#Include %A_ScriptDir%\SubScripts\SpeechModules\ModuleOne.ahk
 return
 

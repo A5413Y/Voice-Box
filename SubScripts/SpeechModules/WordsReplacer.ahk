@@ -20,7 +20,7 @@ if (wordReplacer = 1){
 		hotstring("::women", "girlz")
 		Hotstring("::dumb", "dum")
 		Hotstring("::confused", "ditzy")
-		Hotstring("::very", "so")
+		Hotstring("::very", "super")
 		Hotstring("::thus", "so")
 		Hotstring("::really", "rly")
 		Hotstring("::tits", "tiddies")
@@ -30,5 +30,7 @@ if (wordReplacer = 1){
 		Hotstring("::through", "thru")
 		Hotstring("::thanks", "thankies")
 		Hotstring("::whatever", "whatevz")
+		Hotstring("::probably", "prolly")
+		
 		Hotstring("reset")
 	}

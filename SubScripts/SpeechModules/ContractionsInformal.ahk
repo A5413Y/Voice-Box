@@ -58,5 +58,6 @@ if (contractionsInformal = 1){
 		Hotstring("::out of", "outta")
 		Hotstring("::sort of", "sorta")
 		Hotstring("::want to", "wanna")
+			
 		Hotstring("reset")
 	}

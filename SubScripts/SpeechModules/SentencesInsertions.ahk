@@ -5,7 +5,7 @@
 ; Horny Thoughts: Inserts some horny thoughts (ie. "... *god deer is horny*...") from time to time (less common than hesitation marks)
 
 ; Script had some issues and weirdness with random insertion, so it had to only be allowed after some specific words
-if (hornyThoughts == 1 OR hesitationMarks == 1){
+if (hornyThoughts = 1 OR hesitationMarks = 1 OR caterWauling = 1){
 	Hotstring("B0 Z")
 	Hotstring(":*:and ", Func("insertHesitationsAndHornyThoughts"))
 	Hotstring(":*:to ", Func("insertHesitationsAndHornyThoughts"))
@@ -23,8 +23,9 @@ insertHesitationsAndHornyThoughts() {
 	global hornyThoughts
 	global 3rdPronouns
 	global Pronoun
+	global caterWauling
 	;TODO Rework the way probabilities are handled (Maybe add configuration from the .ini)
-	Random, Var, 1, 4 ; will trigger one of the next two outcomes
+	Random, Var, 1, 5 ; will trigger one of the next three outcomes
 	if (var = 1) {
 		if (hesitationMarks = 1) {
 			Random, Var, 1, 5 ; 1 chance out of 5 to trigger this if we enter this block
@@ -33,8 +34,7 @@ insertHesitationsAndHornyThoughts() {
 				randomString(sStrings, 10)
 			}
 		} else {
-			
-			if (hornyThoughts = 1) {
+				if (hornyThoughts = 1) {
 				Random, Var, 1, 15 ; 1 chance out of 15 to trigger this if we enter this block
 				if (var = 1) {
 					SendInput {BS 1}
@@ -45,8 +45,21 @@ insertHesitationsAndHornyThoughts() {
 					}
 					randomString(sStrings, 5)
 				}
+				
+			} 		else {
+				if (caterWauling = 1) {
+				Random, Var, 1, 5 ; 1 chance out of 5 to trigger this if we enter this block
+				if (var = 1) {
+						SendInput {BS 1}
+						sStrings := " nyaa | nya | meow | nyaa | nyaaaa |"
+						randomString(sStrings, 5)
+					
+					
+				}
 			}
-		}		 
+		}
+		}   
+	
 	} 
 }
 

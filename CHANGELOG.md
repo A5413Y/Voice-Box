@@ -1,28 +1,7 @@
 # VoiceBox Changelog
 
-## 1.0.1 (2021-05-15)
-
-### Fixes
-
-- Fixe `i have` becoming `deer is` in deer mode
-- New contractions and some refactoring
-- Some other minor bug fixes & tweaks
-
-## 1.0 (2021-05-14)
-
-### New speech features
-
-- Deer Mode: You can now disable the deer mode in the settings to just sound like a regular bimbo
-- Forced Contractions: aren't, could've, how're, gonna, wanna, etc...
-- Phonetic: Replaces some common word sounds with phonetically similar ones (ie. "-ome" => "-um", "-ing" => "-in'")
-- Punctuation: Randomly turns periods into questions, exclamations or tilde
-
-### Major refactoring
-
-- Subscripts rearranged
-- Compiled the script into a .exe
-  - Autohotkey shouldn't be necessary to run it anymore, it's embedded in the executable
-  - Thanks to the compilation, the script now has its own icons (Both for running and suspended states)
-  - _The .ahk scripts can still be retrieved from the sources for those who want to edit the script further than the settings allow it (I might make two packages for future releases if there is a demand for it (both ahk and exe))_
-- Settings are now centralized into a .ini file
-  - They are displayed at script start by default (can be disabled)
+## 3.1.0
+Fresh Changelog for the new version because I've been real bad at keeping up with these
+- Actually made the status codes more generic as promised
+- Made a few minor changes to word lists here and there
+- Building off recent developments we now have a Catawauling option, inserts random nyaas into your sentences, occasionally forces a cat pun, and makes sure cats speak about themselves properly
